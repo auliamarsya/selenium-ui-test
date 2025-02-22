@@ -30,7 +30,7 @@ const saudeDemoLoginTest = async() => {
         let badgeCart = await driver.findElement(By.xpath("//span[@class='shopping_cart_badge']")).getText()
         
         //validate if item added
-        assert.strictEqual(badgeCart == 0, true, "Cart does not has item");
+        assert.strictEqual(badgeCart > 0, true, "Cart does not has item");
         console.log(`Cart has ${badgeCart} item`)
     } finally {
         setTimeout(async() => {
