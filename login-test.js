@@ -2,7 +2,6 @@ const { Builder, By, Key, until, error } = require("selenium-webdriver")
 const assert = require("assert");
 
 const chrome = require("selenium-webdriver/chrome");
-const { NoSuchElementError } = require("selenium-webdriver/lib/error");
 
 const saudeDemoLoginTest = async() => {
     let options = new chrome.Options();
